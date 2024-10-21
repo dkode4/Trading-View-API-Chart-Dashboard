@@ -1,0 +1,108 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.panel-container {
+    display: flex;
+    height: calc(100% - 80px);
+    width: 99%;
+    margin-left: .5%;
+    overflow: hidden;
+    position: relative;
+}
+
+.panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1d273b;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.horizontal-panel-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.vertical-panel-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Customize buttons */
+.arrow-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.arrow-buttons button {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.arrow-buttons button:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.arrow-buttons button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.arrow-buttons button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.tradingview-widget-container {
+    height: 98%;
+    width: 99.3%;
+    margin-left: 5px;
+}
+
+.chart3,
+.chart4 {
+    width: 98.3%;
+    height: 99%;
+}
